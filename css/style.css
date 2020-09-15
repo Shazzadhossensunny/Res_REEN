@@ -19,6 +19,8 @@ h1, h2, h3, h4, h5, h6{
 a, a:hover{
   text-decoration: none;
 }
+
+
 /**Header section css start*/
 .head-section{
   width: 100%;
@@ -396,6 +398,9 @@ a, a:hover{
 }*/
 
 @media all and (max-width: 576px){
+   .d-none {
+     display: block!important;
+}
 
 .top-header .contact-info {
     font-size: 14px;
@@ -425,6 +430,72 @@ a, a:hover{
 .form-inline .fa{
   display: none;
 }
+
+.slider .carousel-caption {
+    position: absolute;
+    right: 15%;
+    left: 15%;
+    z-index: 10;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #fff;
+    text-align: center;
+    top: 12%;
+    display: block!important;
+
+}
+
+
+
+.slider .carousel-caption h2 {
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+   
+
+}
+
+.slider .carousel-caption p {
+    font-size: 10px;
+    line-height: 13px;
+    font-weight: 600;
+    color: #76889d;
+}
+
+
+
+
+.slider .carousel-caption .btn-info {
+    font-size: 10px;
+    line-height: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 10px;
+    margin-top: 3px;
+    background: #00bc9c;
+    border: 1px solid #00bc9c;
+    border-radius: 3px;
+    color: #fff;
+    transition: .5s;
+}
+
+.slider .carousel-item .text-right p{
+     font-size: 10px;
+     line-height: 13px;
+     font-weight: 600;
+     color: #fff;
+    margin-bottom: 5px;
+  
+} 
+
+
+
+
+
+
+
 
 
 
