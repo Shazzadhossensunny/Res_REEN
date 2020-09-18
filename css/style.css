@@ -1,7 +1,7 @@
 *{
   padding: 0px;
   margin: 0px;
-  /*box-sizing: border-box;*/
+  box-sizing: border-box;
 }
 /*::-webkit-scrollbar{
   display: none;
@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-a, a:hover{
+a,a:hover{
   text-decoration: none;
 }
 
@@ -48,6 +48,7 @@ a, a:hover{
 .top-header .contact-info .fa{
   margin-right: 8px;
   font-size: 20px;
+  line-height: 20px;
 }
 .top-header .social-icon{
   display: block;
@@ -63,11 +64,37 @@ a, a:hover{
   font-size: 20px;
   line-height: 30px;
   color: #506a85;
+  
 }
 
-.top-header .social-icon li a .fa{
+.top-header .social-icon li .fa{
   margin-left: 15px;
 }
+
+.top-header .social-icon a:hover .fa-facebook{
+  color: #4267B2;
+}
+
+.top-header .social-icon a:hover .fa-google-plus{
+  color: #db4a39;
+}
+
+.top-header .social-icon a:hover .fa-twitter{
+  color: #00acee;
+}
+
+.top-header .social-icon a:hover .fa-pinterest-p{
+  color: #E60023;
+}
+
+.top-header .social-icon a:hover .fa-behance{
+  color: #053eff;
+}
+
+.top-header .social-icon a:hover .fa-dribbble{
+  color: #ea4c89;
+}
+
 
 .head-section .navbar{
   width: 100%;
@@ -88,6 +115,9 @@ a, a:hover{
   color: #506a85;
   
 }
+.head-section .navbar .form-inline .form-control{
+  display: none;
+}
 .head-section .navbar-light .navbar-nav .nav-link {
   color: #506a85!important;
 }
@@ -96,8 +126,14 @@ a, a:hover{
   margin-left: 10px;
 
 }
+.head-section .navbar-light .navbar-nav .nav-link:hover{
+  color: #00bc9c!important;
+}
 
-
+.head-section .navbar-light .navbar-nav .active-item:focus{
+  border: 1PX solid red;
+  color: red!important;
+}
 /******header section css end*****/
 /********slider section css start****/
 .slider{
@@ -137,7 +173,7 @@ a, a:hover{
     line-height: 26px;
     font-weight: 600;
     text-transform: uppercase;
-    padding: 15px 35px;
+    padding: 12px 30px;
     margin-top: 35px;
     background: #00bc9c;
     border: 1px solid #00bc9c;
@@ -160,6 +196,7 @@ a, a:hover{
     color: #00bc9c;
     border: 1px solid #00bc9c; 
 }
+
 /********slider section css end****/
 
 /* who-we-are css code goes here*/
@@ -324,8 +361,8 @@ a, a:hover{
     border: 1px solid #00bc9c;
 }
 /*get in touch css end*/
-
-/*.free_updates{
+/*footer css start*/
+.free_updates{
   width: 100%;
   background: #2f4052;
   padding: 50px 0px;
@@ -346,71 +383,208 @@ a, a:hover{
 
 .item_quiat img{
    width: 40%;
-   margin: 15px 0px;
+   margin-top: 10px;
 }
 .item_quiat .media-body .details{
-  width: 270px;
-  height: 80px;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 400px;
+  font-size: 12px;
+  line-height: 22px;
   color: #a3b1bf;
+  margin-top: 15px;
 }
 .item_quiat .media-body a{
-  position: relative;
-  top: 10px;
   text-decoration: none;
   font-size: 14px;
   line-height: 24px;
   color: #a3b1bf;
+  transition: 0.5s;
+}
+.item_quiat .media-body a .fa{
+  margin-left: 2px;
+}
+.item_quiat .media-body a:hover{
+  color: #00bc9c;
+  transition: 0.5s;
 }
 
-.item_quiat .media-body .fa{
-  position: relative;
-  top: 10px;
-  margin-left: 3px;
+.inner-updates{
+  width: 100%;
+}
+.inner-updates h5{
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 600px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #fff;
+   margin-bottom: 20px;
+}
+.inner-updates .bottom{
+    margin-bottom: 10px;
+}
+
+.inner-updates .inner-img{
+    margin-right: -1px!important;
+    margin-left: -15px!important;
+
+}
+
+.inner_info{
+  width: 100%;
+}
+
+.inner_info h5{
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 600px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.inner_info p{
   font-size: 12px;
-  color: #a3b1bf; 
+  line-height: 22px;
+  font-weight: 400px;
+  color: #a3b1bf;
 }
 
+.inner_info .contact_icon{
+   font-size: 12px;
+   line-height: 22px;
+   font-weight: 600; 
+   color: #6b8096;
 
-.free_updates .latest_head{
+}
+
+.inner_info .contact_icon .fa{
+  margin-right: 5px;
+}
+
+.title_update{
+  width: 100%;
+}
+.title_update h5{
   font-size: 16px;
-  line-height: 26px;
-  font-weight: 600px;
-  letter-spacing: 1px;
-  text-transform: uppercase;
+   line-height: 26px;
+   font-weight: 600px;
+   letter-spacing: 1px;
+   text-transform: uppercase;
+   color: #fff;
+}
+
+.title_update p{
+  font-size: 12px;
+  line-height: 22px;
+  font-weight: 400px;
+  color: #a3b1bf;
+}
+
+.from-group{
+  position: absolute;
+  width: 90%;
+
+}
+.from-group .form-control{
+  width: 100%;
+  padding: 20px 90px 20px 10px;
+  background: #4e5c6c;
+  border: 1px solid #4e5c6c;
+  transition: none;
+  font-size: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.from-group .form-control:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #4e5c6c;
+    box-shadow: none;
+   
+}
+.from-group .btn{
+  position: absolute;
+  bottom: 4px;
+  right: 5px;
+}
+.from-group .btn-info {
   color: #fff;
-  text-align: left;
+  background-color: #00bc9c;
+  border-color: #00bc9c;
+  padding: 7px 11px;
+  font-size: 12px;
+  font-weight: 700;
+}
+.from-group .btn-info:hover{
+  background: transparent;
+  border:1px solid #00bc9c;
+}
+.from-group .btn-info.focus, .btn-info:focus {
+    color: #fff;
+    background-color: transparent!important;
+    border-color: #00bc9c;
+    box-shadow: none!important;
 }
 
-.free_updates .mb-4, .my-4 {
-    margin-bottom: 12px!important;
+/*** footer css end****/
+/*** footer-nav css start****/
 
-
+.footer-section{
+  max-width: 100%;
+  padding: 5px 0px;
+  background: #283645;
+}
+.footer-section .copyright{
+  font-size: 14px;
+  font-weight: 400;
+  color: #707e8c; 
 }
 
-.free_updates .card {
-    
-     background-color: #2f4052; 
-     border: none; 
-     border-radius: 0px; 
-}*/
+.footer-section .inner-nav{
+  max-width: 100%;
+  margin-top: 20px;
+}
 
+.inner-nav .nav-bar{
+  display: block;
+  list-style: none;
+}
+.inner-nav .nav-bar li{
+   display: inline-block;
+   margin-left: 15px;
+  
+}
+.inner-nav .nav-bar a{
+   text-decoration: none;
+   font-size: 16px;
+   line-height: 26px;
+   font-weight: 600;
+   color: #707e8c;
+}
+.inner-nav .nav-bar a:hover{
+  color:#00bc9c; 
+}
+   /*** footer-nav css end****/
+
+
+   /****mobile device css here****/
 @media all and (max-width: 576px){
    .d-none {
      display: block!important;
 }
 
 .top-header .contact-info {
-    font-size: 14px;
-    line-height: 24px;
+    font-size: 12px;
     font-weight: 600;
     color: #6b8096;
-    text-align: right;
-
+    text-align: left;
 }
-
+.top-header .contact-info span {
+    margin-right: 7px;
+    display: flow-root;
+}
+.top-header .contact-info .fa{
+  font-size: 12px;
+}
 .top-header .social-icon {
     display: block;
     text-align: center;
@@ -419,18 +593,23 @@ a, a:hover{
 
 .top-header .social-icon li a {
     font-size: 15px;
-    line-height: 25px;
     color: #506a85;
+    
 }
 
-.top-header .social-icon li a .fa {
+.top-header .social-icon li .fa {
     margin-left: 5px;
+    text-align: right;
+
 }
 
 .form-inline .fa{
   display: none;
 }
-
+.head-section .navbar .form-inline .form-control{
+  display: inline-block ;
+  box-shadow: none;
+}
 .slider .carousel-caption {
     position: absolute;
     right: 15%;
@@ -445,15 +624,12 @@ a, a:hover{
 
 }
 
-
-
 .slider .carousel-caption h2 {
     font-size: 16px;
     line-height: 18px;
     font-weight: 700;
     text-transform: uppercase;
     color: #fff;
-   
 
 }
 
@@ -463,9 +639,6 @@ a, a:hover{
     font-weight: 600;
     color: #76889d;
 }
-
-
-
 
 .slider .carousel-caption .btn-info {
     font-size: 10px;
@@ -486,18 +659,87 @@ a, a:hover{
      line-height: 13px;
      font-weight: 600;
      color: #fff;
-    margin-bottom: 5px;
+     margin-bottom: 5px;
   
 } 
+.latest_works {
+    padding: 40px 0px;
+    
+}
+.who-we-are {
+    padding: 40px 0px 10px;
+    
+}
+.who-we-are h3 {
+    font-size: 30px;
+    line-height: 40px;
+    padding-bottom: 30px;
+   
+}
 
-
-
-
-
-
-
-
-
-
+.who-we-are p {
+    font-size: 13px;
+    line-height: 23px;
+     padding-bottom: 30px;
+}
+.who-we-are .media {
+    margin-top: 20px;
 
 }
+.who-we-are .media .mr-3 {
+    width: 13%;
+    height: 13%;
+}
+.who-we-are .media .media-body h5 {
+    font-size: 20px;
+    line-height: 30px;
+    
+}
+.who-we-are .media .media-body p {
+    font-size: 12px;
+    line-height: 22px;
+    
+}
+
+.free_updates .inner-updates .bottom {
+    margin-bottom: 13px;
+    margin-right: 10px;
+}
+.free_updates .inner-updates .right {
+    margin-bottom: 13px;
+}
+.free_updates .md-mr-20{
+  margin-bottom: 30px;
+}
+.footer-section{
+     padding: 5px 0px 0px;
+}
+
+.footer-section .inner-nav{
+  text-align: center;
+  
+}
+
+.footer-section .copyright{
+  font-size: 10px;
+   
+}
+
+.footer-section .inner-nav{
+  max-width: 92%;
+  margin-top: 5px;
+}
+
+.footer-section .inner-nav .nav-bar li{
+   margin-left: 5px;
+  
+}
+
+.footer-section .inner-nav .nav-bar a{
+   font-size: 12px;
+  
+}
+
+}
+
+ /****mobile device css end here****/
