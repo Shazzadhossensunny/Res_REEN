@@ -20,7 +20,15 @@ a,a:hover{
   text-decoration: none;
 }
 
+.isStuck{
+    left:0px;
+    width:100%;
+}
 
+
+/******************************************************
+        global css code 
+*****************************************************/
 /**Header section css start*/
 .head-section{
   width: 100%;
@@ -62,17 +70,14 @@ a,a:hover{
 
 .top-header .social-icon li a{
   font-size: 20px;
-  line-height: 30px;
   color: #506a85;
-  
-}
-
-.top-header .social-icon li .fa{
-  margin-left: 15px;
+  padding-left: 10px;
+ 
 }
 
 .top-header .social-icon a:hover .fa-facebook{
   color: #4267B2;
+  
 }
 
 .top-header .social-icon a:hover .fa-google-plus{
@@ -101,6 +106,16 @@ a,a:hover{
   background: #ffffff;
 
 }
+.head-section .navbar-wrapper{
+  width: 100%;
+  position: relative;
+  z-index: 15;
+  background: rgba(0, 0, 0, 0.2);
+
+
+}
+
+
 
 .head-section .navbar-light .navbar-brand {
   color: #506a85!important;
@@ -119,20 +134,22 @@ a,a:hover{
   display: none;
 }
 .head-section .navbar-light .navbar-nav .nav-link {
-  color: #506a85!important;
+    color: #506a85!important;
+    background: transparent;
+    padding: 3px 15px;
+    border-radius: 20px;
+    transition: all 0.5s;
+    margin-right: 10px;
 }
 
-.header-section .nav-item .nav-link{
-  margin-left: 10px;
-
-}
 .head-section .navbar-light .navbar-nav .nav-link:hover{
-  color: #00bc9c!important;
+  color: #fff!important;
+  background: #506a85;
 }
 
 .head-section .navbar-light .navbar-nav .active-item:focus{
-  border: 1PX solid red;
-  color: red!important;
+  border: 1PX solid #00bc9c;
+  color: #00bc9c!important;
 }
 /******header section css end*****/
 /********slider section css start****/
@@ -361,6 +378,33 @@ a,a:hover{
     border: 1px solid #00bc9c;
 }
 /*get in touch css end*/
+/*counter-section css start*/
+.counter-section{
+  width: 100%;
+  padding: 0px 0px 80px;
+   
+}
+.counter-section .counter{
+   border: 2px solid #019F9A;
+   text-align: center;
+}
+.counter .fa{
+  font-size: 80px;
+  color: #019F9A;
+}
+
+.counter span{
+  font-size: 60px;
+  color: #019F9A;
+}
+
+.counter h6{
+  font-size: 40px;
+  color: #019F9A;
+}
+/*counter-section css start*/
+
+
 /*footer css start*/
 .free_updates{
   width: 100%;
@@ -550,18 +594,21 @@ a,a:hover{
 }
 .inner-nav .nav-bar li{
    display: inline-block;
-   margin-left: 15px;
+  /* margin-left: 15px;*/
   
 }
 .inner-nav .nav-bar a{
    text-decoration: none;
    font-size: 16px;
-   line-height: 26px;
    font-weight: 600;
    color: #707e8c;
+   padding: 2px 15px 5px 15px;
+   background: #283645;
+   border-radius: 20px;
 }
 .inner-nav .nav-bar a:hover{
-  color:#00bc9c; 
+  color:#00bc9c;
+  background:  #707e8c; 
 }
    /*** footer-nav css end****/
 
